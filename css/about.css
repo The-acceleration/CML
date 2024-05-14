@@ -1,0 +1,51 @@
+.about-section {
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.about-section .about-heading {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+.about-section .about-description {
+  font-size: 16px;
+  color: #666;
+  text-align: justify;
+}
+.about-section .about-team {
+  margin-top: 20px;
+}
+.about-section .about-team .team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.about-section .about-team .team-member img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.about-section .about-team .team-member h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+.about-section .about-team .team-member p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+.about-section .contact-info {
+  margin-top: 20px;
+}
+.about-section .contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+.about-section .contact-info ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=about.css.map */

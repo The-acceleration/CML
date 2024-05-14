@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news_details.css">
+    <link rel="stylesheet" href="css/news-container.css">
+</head>
+<body>
+    <header>
+        <a href="registration.html"><img id="account_icon" src="images/profile-user-account.svg" alt="Иконка аккаунта"></a>
+        <h1 class="channel-name"><a href="index.html" id="all-news-link">Новостной канал</a></h1>    
+    </header>
+
+    <section id="news-data"></section>    
+    <section id="news-container"></section>
+
+    <section id="news-actions">
+        <h2>Оцените новость:</h2>
+        <div>
+            <button onclick="rateNews('like')">👍</button>
+            <button onclick="rateNews('dislike')">👎</button>
+        </div>
+        <h2>Поделиться новостью:</h2>
+        <div>
+            <button onclick="shareOnFacebook()">Facebook</button>
+            <button onclick="shareOnTwitter()">Twitter</button>
+        </div>
+        <h2>Оставить комментарий:</h2>
+        <form id="comment-form">
+            <textarea id="comment" placeholder="Напишите ваш комментарий здесь..."></textarea>
+            <br>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    
+    <footer>
+        &copy; 2024 Новостной канал. Все права защищены.
+    </footer>
+    <script>
+        
+    </script>
+    <script src="js/news_detail.js"></script>
+</body>
+</html>

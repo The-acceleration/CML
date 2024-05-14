@@ -1,0 +1,15 @@
+#news-container {
+  margin: auto;
+  max-width: 1362px;
+}
+
+@media (max-width: 1361px) {
+  #news-container {
+    max-width: 910px;
+  }
+}
+@media (max-width: 912px) {
+  #news-container {
+    max-width: 430px;
+  }
+}/*# sourceMappingURL=news-container.css.map */

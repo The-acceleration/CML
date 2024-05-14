@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #767676;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+body header .channel-name {
+  margin: 0;
+}
+body header #account_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+body nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+body nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+body nav a:hover {
+  text-decoration: underline;
+}
+body section {
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+body section .article {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  max-width: 400px;
+  word-wrap: inherit;
+}
+body section .gay1 {
+  display: inline-block;
+  max-width: 400px;
+}
+body section .featured-article {
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+body footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+body #burger {
+  display: none;
+}
+body .burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+body .burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+body .burger::before, body .burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #000;
+}
+body .burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+body .burger::after {
+  bottom: 0;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+body .burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+body .burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+body .menu-list {
+  top: 57.12px;
+  left: 0;
+  position: absolute;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  background: rgba(236, 236, 236, 0.8);
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+body .menu-list .menu-item {
+  display: block;
+  padding: 8px;
+  color: rgb(46, 46, 46);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+body .menu-list .menu-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+body .burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}
+@media (min-width: 601px) {
+  body .menu {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  body .menu {
+    display: block;
+  }
+}
+@media (max-width: 601px) {
+  body nav {
+    display: none;
+  }
+}
+
+.main-news {
+  display: inline-block;
+}
+
+.main-news-item {
+  margin: auto;
+}
+.main-news-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.small-news-item {
+  margin-bottom: 20px;
+  float: left;
+}
+.small-news-item h3 {
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+.small-news-item img {
+  width: 80%;
+  max-width: 300px;
+}
+
+.secondary-news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: auto;
+}
+
+@media (max-width: 1213px) {
+  .secondary-news-container {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .main-news-item div {
+    height: 92px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .secondary-news-container {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .main-news-item div {
+    height: 92px;
+    overflow: hidden;
+  }
+}
+.gay1 img {
+  width: 100%;
+  height: auto;
+}
+
+#main-news {
+  max-width: 930px;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */

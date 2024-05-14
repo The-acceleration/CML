@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Регистрация / Вход</title>
+<link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+<h1>Добро пожаловать!</h1>
+<div id="main">
+<div class="container">
+  <div class="button-group">
+    <button onclick="showForm('registration')">Регистрация</button>
+    <button onclick="showForm('login')">Войти</button>
+  </div>
+  
+  <button class="continue-button"><a style="text-decoration: none; color: inherit;" href="index.html">Продолжить без регистрации</a></button>
+
+  <form id="registrationForm" class="form" action="#" method="post" onsubmit="registerUser(event)">
+    <h2>Регистрация</h2>
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+    <input type="submit" value="Зарегистрироваться">
+  </form>
+
+  <form id="loginForm" class="form" action="/login" method="post">
+    <h2>Вход</h2>
+    <label for="login_username">Имя пользователя:</label>
+    <input type="text" id="login_username" name="login_username">
+    <label for="login_password">Пароль:</label>
+    <input type="password" id="login_password" name="login_password">
+    <input type="submit" value="Войти">
+  </form>
+</div>
+</div>
+<script>
+  function showForm(formName) {
+    var forms = document.getElementsByClassName('form');
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].style.display = 'none';
+    }
+    document.getElementById(formName + 'Form').style.display = 'block';
+  }
+
+  // Показать форму регистрации по умолчанию
+  showForm('registration');
+</script>
+</body>
+</html>

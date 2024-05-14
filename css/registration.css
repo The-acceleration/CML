@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+body h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+body .container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body .container.active {
+  display: block;
+}
+body .container .form {
+  display: block;
+}
+body .container .button-group {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .container .button-group button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+}
+body .container .button-group button:hover {
+  background-color: #999;
+}
+body .container .continue-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+body .container .continue-button:hover {
+  background-color: #999;
+}
+body .container form {
+  margin-bottom: 20px;
+}
+body .container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+body .container form input[type=text],
+body .container form input[type=password] {
+  width: calc(100% - 22px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+body .container form input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+}
+body .container form input[type=submit]:hover {
+  background-color: #999;
+}
+body .container hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}/*# sourceMappingURL=registration.css.map */

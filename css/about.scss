@@ -1,0 +1,62 @@
+.about-section {
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  
+    .about-heading {
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+  
+    .about-description {
+      font-size: 16px;
+      color: #666;
+      text-align: justify;
+    }
+  
+    .about-team {
+      margin-top: 20px;
+  
+      .team-member {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+  
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+  
+        h3 {
+          font-size: 18px;
+          color: #333;
+          margin: 0;
+        }
+  
+        p {
+          font-size: 14px;
+          color: #666;
+          margin: 0;
+        }
+      }
+    }
+  
+    .contact-info {
+      margin-top: 20px;
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+  
+        li {
+          font-size: 16px;
+          color: #333;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  

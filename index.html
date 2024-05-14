@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новостной канал</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news-container.css">
+</head>
+<body>
+
+    <header>
+        <a href="registration.html"><img id="account_icon" src="images/profile-user-account.svg" alt="Иконка аккаунта"></a>
+        <h1 class="channel-name"><a href="index.html" id="all-news-link">Новостной канал</a></h1>    
+        <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="#" class="menu-item" id="burger_js1" class="politics-link">Политика</a><li>
+                <li><a href="#" class="menu-item" id="burger_js2" class="economy-link">Экономика</a><li>
+                <li><a href="#" class="menu-item" id="burger_js3" class="sports-link">Спорт</a><li>
+                <li><a href="#" class="menu-item" id="burger_js4" class="science-link">Наука</a><li>
+                <li><a href="about.html" id="burger_js5" class="menu-item">О нас</a><li></li>
+            </ul>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#" id="nburger_js1" class="politics-link">Политика</a>|
+        <a href="#" id="nburger_js2" class="economy-link">Экономика</a>|
+        <a href="#" id="nburger_js3" class="sports-link">Спорт</a>|
+        <a href="#" id="nburger_js4" class="science-link">Наука</a>|
+        <a href="about.html" id="nburger_js5">О нас</a>
+    </nav>
+
+    <section id="main-news" class="NONE">
+        <div class="main-news-item">
+            <img id="first-element-gay" src="images/oiaW1hZ2UvKiJ9LCJsaW5rIjoiaHR0cHM6Ly9pY2RuLmxlbnRhLnJ1L2ltYWdlcy8yMDI0LzA1LzA2LzE0LzIwMjQwNTA2MTQxMTE5MzQ2L2RldGFpbF9kNDJlNDYyYzA0OTM4YjBiNjUwYmVkNGY5ZDgzY2FlNC5qcGciLCJyYW5kb21TdHJpbmciOiJNSiJ9.jpg" alt="Основная новость">
+            <div id="second-element"><h2>Генштаб ВСУ заявил об отправке резервов на Харьковщину</h2></div>
+            <div class="article-text" id="third-element">Франция отправила на Украину бойцов Иностранного легиона (фр. Légion étrangère), регулярного подразделения своих сухопутных войск, которое комплектуется преимущественно из иностранцев. По крайней мере, про это пишут российские военкоры, а также близкий к Министерству обороны США военный эксперт Стивен Брайен. Ни во Франции, ни на Украине пока официально не подтверждали и не опровергали эту информацию, однако Министерство обороны России уже объявило о подготовке к первым со времен СССР учениям с использованием тактического ядерного оружия «в ответ на угрозы и провокации». Что такое французский Иностранный легион, почему появилась информация о его переброске на Украину, чем он может там заняться и каковы будут последствия такого вмешательства</div>
+        </div>
+        <div class="secondary-news-container"></div>
+    </section>
+
+        <section id="news-container"></section>
+
+        <footer>
+            &copy; 2024 Новостной канал. Все права защищены.
+        </footer>
+    <script src="js/small-news-loader.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+  
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+      &.active {
+        display: block;
+      }
+  
+      .form {
+        display: block;
+      }
+  
+      .button-group {
+        text-align: center;
+        margin-bottom: 20px;
+  
+        button {
+          padding: 10px 20px;
+          margin: 0 10px;
+          border: none;
+          border-radius: 3px;
+          background-color: #ccc;
+          color: #333;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #999;
+          }
+        }
+      }
+  
+      .continue-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #ccc;
+        color: #333;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+  
+        &:hover {
+          background-color: #999;
+        }
+      }
+  
+      form {
+        margin-bottom: 20px;
+  
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+  
+        input[type=text],
+        input[type=password] {
+          width: calc(100% - 22px);
+          padding: 8px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          box-sizing: border-box;
+        }
+  
+        input[type=submit] {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 3px;
+          background-color: #ccc;
+          color: #333;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #999;
+          }
+        }
+      }
+  
+      hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ccc;
+      }
+    }
+  }
